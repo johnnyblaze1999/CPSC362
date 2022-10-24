@@ -1,64 +1,25 @@
-import React, {useState} from 'react'
-import {Link} from 'react-router-dom'
-
-// icons
-import {FaRocket,FaBars,FaTimes} from 'react-icons/fa';  // change icon
-import { Button } from './Button';
-
+import React from 'react'
+import Logo from '../assets/shopping-bag.png'
+import {Link} from "react-router-dom";
+import ReorderIcon from '@material-ui/icons/Reorder';
+import '../styles/Navbar.css';
 
 function Navbar() {
-  const [click, setClick] = useState(false);
-  const [button, setButton] = useState(true)
-
-  const handleClick = () => setClick(!click);
-  const closeMobileMenu = () => setClick(false);
-
-  const showButton = () => {
-    if(window.innerWidth <= 960){
-      setButton(false);
-    } else{
-      setButton(true);
-    }
-  };
-
-  window.addEventListener('resize', showButton);
-
   return (
-    <>
-      <nav className='navbar'>
-        <div className='navbar-container'>
-          <Link to='/' className="navbar-logo">
-            BookDeal <FaRocket/>
-          </Link>
-          <div className='menu-icon' onClick={handleClick}>
-            <i className={click ? <FaBars/> : <FaTimes/>} />
-          </div>
-          <ul className={click ? 'nav-menu active' : 'nav-menu'}>
-            <li className='nav-item'>
-              <Link to='/' className='nav-links' onClick={closeMobileMenu}>
-                Home
-              </Link>
-            </li>
-            <li className='nav-item'>
-              <Link to='/services' className='nav-links' onClick={closeMobileMenu}>
-                Services
-              </Link>
-            </li>
-            <li className='nav-item'>
-              <Link to='/products' className='nav-links' onClick={closeMobileMenu}>
-                Products
-              </Link>
-            </li>
-            <li className='nav-item'>
-              <Link to='/sign-up' className='nav-links-mobile' onClick={closeMobileMenu}>
-                Sign Up
-              </Link>
-            </li>
-          </ul>
-          {button && <Button buttonStyle='btn--outline'>SIGN UP</Button>}
+    <div className='navbar'>
+        <div className='leftSize'>
+            <img src={Logo} alt='Logo'/>
         </div>
-      </nav>
-    </>
+        <div className='rightSize'>
+            <Link to="/">Home</Link>
+            <Link to="/products">Products</Link>
+            <Link to="/about">About</Link>
+            <Link to="/contact">Contact</Link>
+            <button>
+              <ReorderIcon/>
+            </button>
+        </div>
+    </div>   
   )
 }
 
