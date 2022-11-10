@@ -3,10 +3,11 @@ import { Transition } from "@headlessui/react";
 import Head from 'next/head'
 import {FaLinkedin, FaGoogle, FaGithub, FaBars} from 'react-icons/fa';
 import Image from 'next/image';
-import deved from '../public/dev-ed-wave.png'
-import design from '../public/design.png'
-import code from '../public/code.png'
-import consulting from '../public/consulting.png'
+import bookstore from '../public/bookstore.jpg'
+import kevin from '../public/kevin.png'
+import brian from '../public/brian.png'
+import dharmesh from '../public/dharmesh.png'
+import tuan from '../public/tuan.png'
 
 export default function Home() {
   const [isOpen, setIsOpen] = useState(false);
@@ -173,7 +174,7 @@ export default function Home() {
       <main className='bg-white px-10'>
         <section className='min-h-screen'>
           <div className=' text-center p-10'>
-            <h2 className='text-5xl py-2 text-teal-600 font-medium'>Kevin Nguyen</h2>
+            <h2 className='text-5xl py-2 text-teal-600 font-medium'>About Us</h2>
             <h3 className=' text-2xl py-2'>Developer and designer</h3>
             <p className=' text-sm py-5 leading-8'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
           </div>
@@ -182,41 +183,50 @@ export default function Home() {
             <FaLinkedin/>
             <FaGithub/>
           </div>
-          <div className='relative bg-gradient-to-b from-teal-500 rounded-full w-80 h-80 mt-20 mx-auto overflow-hidden'>
-            <Image src={deved} layout='fill' objectFit='cover'/>
+          <div className='relative w-4/5 h-96 my-20 mx-auto overflow-hidden'>
+            <Image src={bookstore} layout='fill' objectFit='cover'/>
           </div>
         </section>
 
         <section>
           <div>
-            <h3 className="text-3xl py-1">Services We Offer</h3>
+            <h3 className="text-center text-3xl py-1">Services We Offer</h3>
             <p className="text-md py-2 leading-8 text-gray-800">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
           </div>
           <div className="md:flex gap-10">
             <div className="text-center shadow-lg p-10 rounded-xl my-10">
-              <Image src={design} alt="Services" width={100} height={100}/>
-              <h3 className="text-lg font-medium pt-8 pb-2">Beautiful Design</h3>
-              <p className="py-2">Creating elegant designs suited for your needs following design theory</p>
-              <h4 className="py-4 text-teal-600">Design tools I use</h4>
-              <p className="text-gray-800 py-1">Photoshop</p>
+              <Image src={kevin} alt="Services" width={100} height={100}/>
+              <h3 className="text-lg font-medium pt-8 pb-2">Kevin Nguyen</h3>
+              <p className="py-2">Front-end web developer and designer</p>
+              <h4 className="py-4 text-teal-600">My Work</h4>
+              <p className="text-gray-800 py-1">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
               <p className="text-gray-800 py-1">Illustrator</p>
               <p className="text-gray-800 py-1">Figma</p>
             </div>
             <div className="text-center shadow-lg p-10 rounded-xl my-10">
-              <Image src={code} alt="Services" width={100} height={100}/>
-              <h3 className="text-lg font-medium pt-8 pb-2">Beautiful Design</h3>
-              <p className="py-2">Creating elegant designs suited for your needs following design theory</p>
-              <h4 className="py-4 text-teal-600">Design tools I use</h4>
-              <p className="text-gray-800 py-1">Photoshop</p>
+              <Image src={brian} alt="Services" width={100} height={100}/>
+              <h3 className="text-lg font-medium pt-8 pb-2">Brian Nguyen</h3>
+              <p className="py-2">Front-end web developer and designer</p>
+              <h4 className="py-4 text-teal-600">My Work</h4>
+              <p className="text-gray-800 py-1">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
               <p className="text-gray-800 py-1">Illustrator</p>
               <p className="text-gray-800 py-1">Figma</p>
             </div>
             <div className="text-center shadow-lg p-10 rounded-xl my-10">
-              <Image src={consulting} alt="Services" width={100} height={100}/>
-              <h3 className="text-lg font-medium pt-8 pb-2">Beautiful Design</h3>
-              <p className="py-2">Creating elegant designs suited for your needs following design theory</p>
-              <h4 className="py-4 text-teal-600">Design tools I use</h4>
-              <p className="text-gray-800 py-1">Photoshop</p>
+              <Image src={dharmesh} alt="Services" width={100} height={100}/>
+              <h3 className="text-lg font-medium pt-8 pb-2">Dharmesh Tewari</h3>
+              <p className="py-2">Back-end developer</p>
+              <h4 className="py-4 text-teal-600">My Work</h4>
+              <p className="text-gray-800 py-1">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+              <p className="text-gray-800 py-1">Illustrator</p>
+              <p className="text-gray-800 py-1">Figma</p>
+            </div>
+            <div className="text-center shadow-lg p-10 rounded-xl my-10">
+              <Image src={tuan} alt="Services" width={100} height={100}/>
+              <h3 className="text-lg font-medium pt-8 pb-2">Tuan Nguyen</h3>
+              <p className="py-2">Scrum master</p>
+              <h4 className="py-4 text-teal-600">My Work</h4>
+              <p className="text-gray-800 py-1">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
               <p className="text-gray-800 py-1">Illustrator</p>
               <p className="text-gray-800 py-1">Figma</p>
             </div>

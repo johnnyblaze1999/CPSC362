@@ -3,7 +3,7 @@ import { Transition } from "@headlessui/react";
 import Head from 'next/head'
 import {FaLinkedin, FaGoogle, FaGithub, FaBars} from 'react-icons/fa';
 import Image from 'next/image';
-import deved from '../public/dev-ed-wave.png'
+import deved from '../public/shopping-bag0.png'
 import design from '../public/design.png'
 import code from '../public/code.png'
 import consulting from '../public/consulting.png'

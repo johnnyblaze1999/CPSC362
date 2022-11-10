@@ -3,7 +3,7 @@ import { Transition } from "@headlessui/react";
 import Head from 'next/head'
 import {FaLinkedin, FaGoogle, FaGithub, FaBars} from 'react-icons/fa';
 import Image from 'next/image';
-import deved from '../public/dev-ed-wave.png'
+import deved from '../public/shopping-bag0.png'
 import design from '../public/design.png'
 import code from '../public/code.png'
 import consulting from '../public/consulting.png'
@@ -55,7 +55,7 @@ export default function Home() {
                   </a>
 
                   <a
-                    href="#"
+                    href="about"
                     className="text-gray-400 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium"
                   >
                     About
@@ -151,7 +151,7 @@ export default function Home() {
                 </a>
 
                 <a
-                  href="#"
+                  href="about"
                   className="text-gray-400 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium"
                 >
                   About
