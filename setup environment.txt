@@ -1,0 +1,81 @@
+npx create-next-app@latest [Name-of-the-project folder]				NOTE: NO typescript, YES to the rest
+
+[Inside that folder]
+
+npm install -D tailwindcss
+npx tailwindcss init -p
+
+npm install @headlessui/react
+npm install react-icons
+
+npm install react-dom
+
+---
+
+[Inside /styles/globals.css]
+Add to the first line:
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+Remove:
+@media (prefers-color-scheme: dark) {
+  html {
+    color-scheme: dark;
+  }
+  body {
+    color: white;
+    background: black;
+  }
+}
+---
+
+[To add custom font]
+[Inside /styles/globals.css]
+
+Add to the last line:
+
+@font-face{
+	font-family:"name-of-font";
+	src: url('../public/name-of-font.otf');
+}
+
+[Inside tailwind.config.js]
+
+Add:
+fontFamily: {
+        burtons:"burtons",
+      },
+
+Inside:
+  theme: {
+    extend: {
+      fontFamily: {
+        burtons:"burtons",
+      },
+    },
+  },
+
+---
+
+[Add tailwindcss intellisense for vscode]
+Go to settings > type 'editor.quickSuggestions' > "strings": true
+								> "files.associations": { "*.css": "\"tailwindcss\"" }
+
+---
+
+[Paste into tailwind.config.js]
+/** @type {import('tailwindcss').Config} */
+module.exports = {
+  content: [
+    "./app/**/*.{js,ts,jsx,tsx}",
+    "./pages/**/*.{js,ts,jsx,tsx}",
+    "./components/**/*.{js,ts,jsx,tsx}",
+  ],
+  theme: {
+    extend: {},
+  },
+  plugins: [],
+}
