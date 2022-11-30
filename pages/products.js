@@ -8,6 +8,17 @@ import design from '../public/design.png'
 import code from '../public/code.png'
 import consulting from '../public/consulting.png'
 
+import book0 from '../public/book0.jpg'
+import book1 from '../public/book1.jpg'
+import book2 from '../public/book2.jpg'
+import book3 from '../public/book3.jpg'
+import book4 from '../public/book4.jpg'
+import book5 from '../public/book5.jpg'
+import book6 from '../public/book6.jpg'
+import book7 from '../public/book7.jpg'
+import book8 from '../public/book8.jpg'
+import book9 from '../public/book9.jpg'
+
 export default function Home() {
   const [isOpen, setIsOpen] = useState(false);
   return (
@@ -172,18 +183,64 @@ export default function Home() {
 
       <main className='bg-white px-10'>
         <section className='min-h-screen'>
-          <div className=' text-center p-10'>
-            <h2 className='text-5xl py-2 text-teal-600 font-medium'>Kevin Nguyen</h2>
-            <h3 className=' text-2xl py-2'>Developer and designer</h3>
+          <div className=' text-start p-10'>
+            <h2 className='text-5xl py-2 text-orange-400 drop-shadow-sm font-medium'>Our Products</h2>
+            <h3 className=' text-2xl py-2'>Best books 2022</h3>
             <p className=' text-sm py-5 leading-8'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
           </div>
-          <div className='text-5xl flex justify-center gap-16 py-3 text-gray-600'>
-            <FaGoogle/>
-            <FaLinkedin/>
-            <FaGithub/>
-          </div>
-          <div className='relative bg-gradient-to-b from-teal-500 rounded-full w-80 h-80 mt-20 mx-auto overflow-hidden'>
-            <Image src={deved} layout='fill' objectFit='cover'/>
+          
+           {/* Book content */}
+          <div className="flex text-center flex-col gap-10 py-10 lg:flex-row lg:flex-wrap">
+            <div className=" relative max-w-md basis-1/6 flex-1 text-center shadow-xl rounded-xl max-md">
+              <Image src={book0} className=" absolute rounded-lg object-cover h-96 w-48" width={70} height={100} layout="responsive"/>
+              <p className="text-md font-medium pt-2">Tomorrow, and Tomorrow, and Tomorrow</p>
+              <p className="text-sm font-medium pb-2 text-gray-500">Gabrielle Zevin</p>
+            </div>
+            <div className=" relative max-w-md basis-1/6 flex-1 text-center shadow-xl rounded-xl max-md">
+              <Image src={book1} className=" absolute rounded-lg object-cover h-96 w-48" width={70} height={100} layout="responsive"/>
+              <p className="text-md font-medium pt-2">Solito</p>
+              <p className="text-sm font-medium pb-2 text-gray-500">Javier Zamora</p>
+            </div>
+            <div className=" relative max-w-md basis-1/6 flex-1 text-center shadow-xl rounded-xl max-md">
+              <Image src={book2} className=" absolute rounded-lg object-cover h-96 w-48" width={70} height={100} layout="responsive"/>
+              <p className="text-md font-medium pt-2">The Maid</p>
+              <p className="text-sm font-medium pb-2 text-gray-500">Nita Prose</p>
+            </div>
+            <div className=" relative max-w-md basis-1/6 flex-1 text-center shadow-xl rounded-xl max-md">
+              <Image src={book3} className=" absolute rounded-lg object-cover h-96 w-48" width={70} height={100} layout="responsive"/>
+              <p className="text-md font-medium pt-2">I'm Glad My Mom Died</p>
+              <p className="text-sm font-medium pb-2 text-gray-500">Jennette McCurdy</p>
+            </div>
+            <div className=" relative max-w-md basis-1/6 flex-1 text-center shadow-xl rounded-xl max-md">
+              <Image src={book4} className=" absolute rounded-lg object-cover h-96 w-48" width={70} height={100} layout="responsive"/>
+              <p className="text-md font-medium pt-2">Lessons In Chemistry</p>
+              <p className="text-sm font-medium pb-2 text-gray-500">Bonnie Garmus</p>
+            </div>
+            <div className=" relative max-w-md basis-1/6 flex-1 text-center shadow-xl rounded-xl max-md">
+              <Image src={book5} className=" absolute rounded-lg object-cover h-96 w-48" width={70} height={100} layout="responsive"/>
+              <p className="text-md font-medium pt-2">Horse: A Novel</p>
+              <p className="text-sm font-medium pb-2 text-gray-500">Geraldine Brooks</p>
+            </div>
+            <div className=" relative max-w-md basis-1/6 flex-1 text-center shadow-xl rounded-xl max-md">
+              <Image src={book6} className=" absolute rounded-lg object-cover h-96 w-48" width={70} height={100} layout="responsive"/>
+              <p className="text-md font-medium pt-2">The 45 Laws of Power</p>
+              <p className="text-sm font-medium pb-2 text-gray-500">Robert Greene</p>
+            </div>
+            <div className=" relative max-w-md basis-1/6 flex-1 text-center shadow-xl rounded-xl max-md">
+              <Image src={book7} className=" absolute rounded-lg object-cover h-96 w-48" width={70} height={100} layout="responsive"/>
+              <p className="text-md font-medium pt-2">The Silent Patient</p>
+              <p className="text-sm font-medium pb-2 text-gray-500">Alex Michaelides</p>
+            </div>
+            <div className=" relative max-w-md basis-1/6 flex-1 text-center shadow-xl rounded-xl max-md">
+              <Image src={book8} className=" absolute rounded-lg object-cover h-96 w-48" width={70} height={100} layout="responsive"/>
+              <p className="text-md font-medium pt-2">Ikigai: The Japanese Secret to a Long and Happy Life</p>
+              <p className="text-sm font-medium pb-2 text-gray-500">Héctor García</p>
+            </div>
+            <div className=" relative max-w-md basis-1/6 flex-1 text-center shadow-xl rounded-xl max-md">
+              <Image src={book9} className=" absolute rounded-lg object-cover h-96 w-48" width={70} height={100} layout="responsive"/>
+              <p className="text-md font-medium pt-2">The Art of God of War Ragnarök</p>
+              <p className="text-sm font-medium pb-2 text-gray-500">Amy Ratcliffe </p>
+            </div>
           </div>
         </section>
 
@@ -220,6 +277,16 @@ export default function Home() {
               <p className="text-gray-800 py-1">Illustrator</p>
               <p className="text-gray-800 py-1">Figma</p>
             </div>
+          </div>
+
+          {/* Logo and link */}
+          <div className='relative bg-gradient-to-b from-orange-500 rounded-full w-80 h-80 mt-20 mx-auto overflow-hidden mb-5'>
+            <Image src={deved} layout='fill' objectFit='cover'/>
+          </div>
+          <div className='text-5xl flex justify-center gap-16 py-3 text-gray-600'>
+            <FaGoogle/>
+            <FaLinkedin/>
+            <FaGithub/>
           </div>
         </section>
       </main>

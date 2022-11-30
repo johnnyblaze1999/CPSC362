@@ -174,7 +174,7 @@ export default function Home() {
       <main className='bg-white px-10'>
         <section className='min-h-screen'>
           <div className=' text-center p-10'>
-            <h2 className='text-5xl py-2 text-teal-600 font-medium'>About Us</h2>
+            <h2 className='text-5xl py-2 text-orange-500 font-medium'>About Us</h2>
             <h3 className=' text-2xl py-2'>Developer and designer</h3>
             <p className=' text-sm py-5 leading-8'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
           </div>
@@ -198,10 +198,11 @@ export default function Home() {
               <Image src={kevin} alt="Services" width={100} height={100}/>
               <h3 className="text-lg font-medium pt-8 pb-2">Kevin Nguyen</h3>
               <p className="py-2">Front-end web developer and designer</p>
-              <h4 className="py-4 text-teal-600">My Work</h4>
-              <p className="text-gray-800 py-1">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-              <p className="text-gray-800 py-1">Illustrator</p>
-              <p className="text-gray-800 py-1">Figma</p>
+              <h4 className="py-4 text-orange-600">My Duty</h4>
+              <p className="text-gray-800 py-1">I develop and design the look of the webpage. My goal is to make it reactive and clean looking with some of the modern feel. The most challenging part of my website is the navigation bar and its functionality. Because this is still my new language, parts of this website could be buggy or broken.</p>
+              <h4 className=" py-4 text-orange-600">Tools I used</h4>
+              <p className="text-gray-800 py-1">React</p>
+              <p className="text-gray-800 py-1">Tailwind CSS</p>
             </div>
             <div className="text-center shadow-lg p-10 rounded-xl my-10">
               <Image src={brian} alt="Services" width={100} height={100}/>
