@@ -54,13 +54,13 @@ export default function Home() {
 
                   <a
                     href="#"
-                    className=" hover:bg-gray-700 text-white px-3 py-2 rounded-md text-sm font-medium"
+                    className=" bg-gray-700 text-white px-3 py-2 rounded-md text-sm font-medium cursor-default"
                   >
                     Products
                   </a>
 
                   <a
-                    href="#"
+                    href="contact"
                     className="text-gray-400 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium"
                   >
                     Contact
@@ -79,6 +79,33 @@ export default function Home() {
                   >
                     Login
                   </a>
+                </div>
+              </div>
+
+              {/*sear box*/}
+              <div className="flex items-center ml-10">
+                <div className="flex space-x-2">
+                    <input
+                        type="text"
+                        className="block w-full px-4 py-2 text-black bg-white border rounded-md focus:border-orange-400 focus:ring-orange-300 focus:outline-none focus:ring focus:ring-opacity-40"
+                        placeholder="Search products"
+                    />
+                    <button className="px-3 text-white bg-orange-600 rounded-md ">
+                        <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            className="w-5 h-5"
+                            fill="none"
+                            viewBox="0 0 24 24"
+                            stroke="currentColor"
+                            strokeWidth={2}
+                        >
+                            <path
+                                strokeLinecap="round"
+                                strokeLinejoin="round"
+                                d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"
+                            />
+                        </svg>
+                    </button>
                 </div>
               </div>
             </div>
@@ -150,13 +177,13 @@ export default function Home() {
 
                 <a
                   href="#"
-                  className="text-white hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium"
+                  className="bg-gray-700 text-white block px-3 py-2 rounded-md text-base font-medium cursor-default"
                 >
                   Products
                 </a>
 
                 <a
-                  href="#"
+                  href="contact"
                   className="text-gray-400 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium"
                 >
                   Contact
@@ -185,61 +212,86 @@ export default function Home() {
         <section className='min-h-screen'>
           <div className=' text-start p-10'>
             <h2 className='text-5xl py-2 text-orange-400 drop-shadow-sm font-medium'>Our Products</h2>
-            <h3 className=' text-2xl py-2'>Best books 2022</h3>
+            <h3 className=' text-2xl py-2'>Best books of 2022</h3>
             <p className=' text-sm py-5 leading-8'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
           </div>
           
            {/* Book content */}
-          <div className="flex text-center flex-col gap-10 py-10 lg:flex-row lg:flex-wrap">
-            <div className=" relative max-w-md basis-1/6 flex-1 text-center shadow-xl rounded-xl max-md">
-              <Image src={book0} className=" absolute rounded-lg object-cover h-96 w-48" width={70} height={100} layout="responsive"/>
-              <p className="text-md font-medium pt-2">Tomorrow, and Tomorrow, and Tomorrow</p>
-              <p className="text-sm font-medium pb-2 text-gray-500">Gabrielle Zevin</p>
+          <div className="flex justify-center">
+            <div className="flex text-center flex-col gap-10 py-10 lg:flex-row lg:flex-wrap">
+              <div className=" relative max-w-md basis-1/6 flex-1 text-center shadow-xl rounded-xl max-md hover:scale-110 hover:cursor-pointer ease-in duration-100">
+                <Image src={book0} className=" absolute rounded-lg object-cover h-96 w-48" width={70} height={100} layout="responsive"/>
+                <p className="text-md font-medium pt-2">Tomorrow, and Tomorrow, and Tomorrow</p>
+                <p className="text-sm font-medium pb-2 text-gray-500">Gabrielle Zevin</p>
+              </div>
+              <div className=" relative max-w-md basis-1/6 flex-1 text-center shadow-xl rounded-xl max-md hover:scale-110 hover:cursor-pointer ease-in duration-100">
+                <Image src={book1} className=" absolute rounded-lg object-cover h-96 w-48" width={70} height={100} layout="responsive"/>
+                <p className="text-md font-medium pt-2">Solito</p>
+                <p className="text-sm font-medium pb-2 text-gray-500">Javier Zamora</p>
+              </div>
+              <div className=" relative max-w-md basis-1/6 flex-1 text-center shadow-xl rounded-xl max-md hover:scale-110 hover:cursor-pointer ease-in duration-100">
+                <Image src={book2} className=" absolute rounded-lg object-cover h-96 w-48" width={70} height={100} layout="responsive"/>
+                <p className="text-md font-medium pt-2">The Maid</p>
+                <p className="text-sm font-medium pb-2 text-gray-500">Nita Prose</p>
+              </div>
+              <div className=" relative max-w-md basis-1/6 flex-1 text-center shadow-xl rounded-xl max-md hover:scale-110 hover:cursor-pointer ease-in duration-100">
+                <Image src={book3} className=" absolute rounded-lg object-cover h-96 w-48" width={70} height={100} layout="responsive"/>
+                <p className="text-md font-medium pt-2">I'm Glad My Mom Died</p>
+                <p className="text-sm font-medium pb-2 text-gray-500">Jennette McCurdy</p>
+              </div>
+              <div className=" relative max-w-md basis-1/6 flex-1 text-center shadow-xl rounded-xl max-md hover:scale-110 hover:cursor-pointer ease-in duration-100">
+                <Image src={book4} className=" absolute rounded-lg object-cover h-96 w-48" width={70} height={100} layout="responsive"/>
+                <p className="text-md font-medium pt-2">Lessons In Chemistry</p>
+                <p className="text-sm font-medium pb-2 text-gray-500">Bonnie Garmus</p>
+              </div>
+              <div className=" relative max-w-md basis-1/6 flex-1 text-center shadow-xl rounded-xl max-md hover:scale-110 hover:cursor-pointer ease-in duration-100">
+                <Image src={book5} className=" absolute rounded-lg object-cover h-96 w-48" width={70} height={100} layout="responsive"/>
+                <p className="text-md font-medium pt-2">Horse: A Novel</p>
+                <p className="text-sm font-medium pb-2 text-gray-500">Geraldine Brooks</p>
+              </div>
+              <div className=" relative max-w-md basis-1/6 flex-1 text-center shadow-xl rounded-xl max-md hover:scale-110 hover:cursor-pointer ease-in duration-100">
+                <Image src={book6} className=" absolute rounded-lg object-cover h-96 w-48" width={70} height={100} layout="responsive"/>
+                <p className="text-md font-medium pt-2">The 45 Laws of Power</p>
+                <p className="text-sm font-medium pb-2 text-gray-500">Robert Greene</p>
+              </div>
+              <div className=" relative max-w-md basis-1/6 flex-1 text-center shadow-xl rounded-xl max-md hover:scale-110 hover:cursor-pointer ease-in duration-100">
+                <Image src={book7} className=" absolute rounded-lg object-cover h-96 w-48" width={70} height={100} layout="responsive"/>
+                <p className="text-md font-medium pt-2">The Silent Patient</p>
+                <p className="text-sm font-medium pb-2 text-gray-500">Alex Michaelides</p>
+              </div>
+              <div className=" relative max-w-md basis-1/6 flex-1 text-center shadow-xl rounded-xl max-md hover:scale-110 hover:cursor-pointer ease-in duration-100">
+                <Image src={book8} className=" absolute rounded-lg object-cover h-96 w-48" width={70} height={100} layout="responsive"/>
+                <p className="text-md font-medium pt-2">Ikigai: The Japanese Secret to a Long and Happy Life</p>
+                <p className="text-sm font-medium pb-2 text-gray-500">Héctor García</p>
+              </div>
+              <div className=" relative max-w-md basis-1/6 flex-1 text-center shadow-xl rounded-xl max-md hover:scale-110 hover:cursor-pointer ease-in duration-100">
+                <Image src={book9} className=" absolute rounded-lg object-cover h-96 w-48" width={70} height={100} layout="responsive"/>
+                <p className="text-md font-medium pt-2">The Art of God of War Ragnarök</p>
+                <p className="text-sm font-medium pb-2 text-gray-500">Amy Ratcliffe </p>
+              </div>
             </div>
-            <div className=" relative max-w-md basis-1/6 flex-1 text-center shadow-xl rounded-xl max-md">
-              <Image src={book1} className=" absolute rounded-lg object-cover h-96 w-48" width={70} height={100} layout="responsive"/>
-              <p className="text-md font-medium pt-2">Solito</p>
-              <p className="text-sm font-medium pb-2 text-gray-500">Javier Zamora</p>
-            </div>
-            <div className=" relative max-w-md basis-1/6 flex-1 text-center shadow-xl rounded-xl max-md">
-              <Image src={book2} className=" absolute rounded-lg object-cover h-96 w-48" width={70} height={100} layout="responsive"/>
-              <p className="text-md font-medium pt-2">The Maid</p>
-              <p className="text-sm font-medium pb-2 text-gray-500">Nita Prose</p>
-            </div>
-            <div className=" relative max-w-md basis-1/6 flex-1 text-center shadow-xl rounded-xl max-md">
-              <Image src={book3} className=" absolute rounded-lg object-cover h-96 w-48" width={70} height={100} layout="responsive"/>
-              <p className="text-md font-medium pt-2">I'm Glad My Mom Died</p>
-              <p className="text-sm font-medium pb-2 text-gray-500">Jennette McCurdy</p>
-            </div>
-            <div className=" relative max-w-md basis-1/6 flex-1 text-center shadow-xl rounded-xl max-md">
-              <Image src={book4} className=" absolute rounded-lg object-cover h-96 w-48" width={70} height={100} layout="responsive"/>
-              <p className="text-md font-medium pt-2">Lessons In Chemistry</p>
-              <p className="text-sm font-medium pb-2 text-gray-500">Bonnie Garmus</p>
-            </div>
-            <div className=" relative max-w-md basis-1/6 flex-1 text-center shadow-xl rounded-xl max-md">
-              <Image src={book5} className=" absolute rounded-lg object-cover h-96 w-48" width={70} height={100} layout="responsive"/>
-              <p className="text-md font-medium pt-2">Horse: A Novel</p>
-              <p className="text-sm font-medium pb-2 text-gray-500">Geraldine Brooks</p>
-            </div>
-            <div className=" relative max-w-md basis-1/6 flex-1 text-center shadow-xl rounded-xl max-md">
-              <Image src={book6} className=" absolute rounded-lg object-cover h-96 w-48" width={70} height={100} layout="responsive"/>
-              <p className="text-md font-medium pt-2">The 45 Laws of Power</p>
-              <p className="text-sm font-medium pb-2 text-gray-500">Robert Greene</p>
-            </div>
-            <div className=" relative max-w-md basis-1/6 flex-1 text-center shadow-xl rounded-xl max-md">
-              <Image src={book7} className=" absolute rounded-lg object-cover h-96 w-48" width={70} height={100} layout="responsive"/>
-              <p className="text-md font-medium pt-2">The Silent Patient</p>
-              <p className="text-sm font-medium pb-2 text-gray-500">Alex Michaelides</p>
-            </div>
-            <div className=" relative max-w-md basis-1/6 flex-1 text-center shadow-xl rounded-xl max-md">
-              <Image src={book8} className=" absolute rounded-lg object-cover h-96 w-48" width={70} height={100} layout="responsive"/>
-              <p className="text-md font-medium pt-2">Ikigai: The Japanese Secret to a Long and Happy Life</p>
-              <p className="text-sm font-medium pb-2 text-gray-500">Héctor García</p>
-            </div>
-            <div className=" relative max-w-md basis-1/6 flex-1 text-center shadow-xl rounded-xl max-md">
-              <Image src={book9} className=" absolute rounded-lg object-cover h-96 w-48" width={70} height={100} layout="responsive"/>
-              <p className="text-md font-medium pt-2">The Art of God of War Ragnarök</p>
-              <p className="text-sm font-medium pb-2 text-gray-500">Amy Ratcliffe </p>
+          </div>
+          
+          
+          {/*page button */}
+          <div class="max-w-lg p-5 container flex justify-center mx-auto">
+            <div class="flex flex-row mx-auto">
+              <button type="button" class="bg-white text-black rounded-l-md border-r border-gray-100 py-2 hover:bg-orange-600 hover:shadow-inner hover:text-white px-3 mx-2 shadow-xl">
+                <div class="flex flex-row align-middle">
+                  <svg class="w-5 mr-2" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" d="M7.707 14.707a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414l4-4a1 1 0 011.414 1.414L5.414 9H17a1 1 0 110 2H5.414l2.293 2.293a1 1 0 010 1.414z" clip-rule="evenodd"></path>
+                  </svg>
+                  <p class="ml-2">Prev</p>
+                </div>
+              </button>
+              <button type="button" class="bg-white text-black rounded-r-md py-2 border-l border-gray-200 hover:bg-orange-600 hover:shadow-inner hover:text-white px-3 mx-2 shadow-xl">
+                <div class="flex flex-row align-middle">
+                  <span class="mr-2">Next</span>
+                  <svg class="w-5 ml-2" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" d="M12.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-2.293-2.293a1 1 0 010-1.414z" clip-rule="evenodd"></path>
+                  </svg>
+                </div>
+              </button>
             </div>
           </div>
         </section>

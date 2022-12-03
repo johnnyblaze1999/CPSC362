@@ -34,8 +34,8 @@ export default function Home() {
               <div className="hidden md:block">
                 <div className="ml-10 flex items-baseline space-x-4">
                   <a
-                    href="#"
-                    className=" bg-gray-700 text-white px-3 py-2 rounded-md text-sm font-medium cursor-default"
+                    href="/"
+                    className=" text-gray-400 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium"
                   >
                     Home
                   </a>
@@ -48,8 +48,8 @@ export default function Home() {
                   </a>
 
                   <a
-                    href="contact"
-                    className="text-gray-400 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium"
+                    href="#"
+                    className="bg-gray-700 text-white px-3 py-2 rounded-md text-sm font-medium cursor-default"
                   >
                     Contact
                   </a>
@@ -130,8 +130,8 @@ export default function Home() {
             <div className="md:hidden" id="mobile-menu">
               <div ref={ref} className="px-2 pt-2 pb-3 space-y-1 sm:px-3">
                 <a
-                  href="#"
-                  className="bg-gray-700 text-white block px-3 py-2 rounded-md text-base font-medium cursor-default"
+                  href="/"
+                  className="text-gray-400 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium"
                 >
                   Home
                 </a>
@@ -144,8 +144,8 @@ export default function Home() {
                 </a>
 
                 <a
-                  href="contact"
-                  className="text-gray-400 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium"
+                  href="#"
+                  className="bg-gray-700 text-white block px-3 py-2 rounded-md text-base font-medium cursor-default"
                 >
                   Contact
                 </a>
@@ -171,20 +171,54 @@ export default function Home() {
 
       <main className='bg-white px-10'>
         <section className='min-h-screen'>
-          <div className=' text-center p-10'>
-            <h2 className='text-5xl py-2 text-teal-600 font-medium'>Kevin Nguyen</h2>
+          <div className=' text-left p-10'>
+            <h2 className=' text-5xl py-2 text-orange-600 font-medium'>Contact Us</h2>
             <h3 className=' text-2xl py-2'>Developer and designer</h3>
             <p className=' text-sm py-5 leading-8'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
           </div>
-          <div className='text-5xl flex justify-center gap-16 py-3 text-gray-600'>
-            <FaGoogle/>
-            <FaLinkedin/>
-            <FaGithub/>
-          </div>
-          <div className='relative bg-gradient-to-b from-teal-500 rounded-full w-80 h-80 mt-20 mx-auto overflow-hidden'>
-            <Image src={deved} layout='fill' objectFit='cover'/>
+          <div className="flex justify-center">
+            <form className="w-full max-w-lg ">
+              <div className="flex flex-wrap -mx-3 mb-6">
+                <div className="w-full md:w-1/2 px-3 mb-6 md:mb-0">
+                  <label className="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2" for="grid-first-name">
+                    First Name
+                  </label>
+                  <input className="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white focus:border-gray-500" id="grid-first-name" type="text"/>
+                </div>
+                <div className="w-full md:w-1/2 px-3">
+                  <label className="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2" for="grid-last-name">
+                    Last Name
+                  </label>
+                  <input className="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white focus:border-gray-500" id="grid-last-name" type="text"/>
+                </div>
+              </div>
+              <div className="flex flex-wrap -mx-3 mb-6">
+                <div className="w-full px-3">
+                  <label className="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2" for="grid-password">
+                    E-mail
+                  </label>
+                  <input className="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white focus:border-gray-500" id="email" type="email"/>
+                </div>
+              </div>
+              <div className="flex flex-wrap -mx-3 mb-6">
+                <div className="w-full px-3">
+                  <label className="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2" for="grid-password">
+                    Message
+                  </label>
+                  <textarea className=" no-resize appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white focus:border-gray-500 h-48 resize-none" id="message"></textarea>
+                </div>
+              </div>
+              <div className="flex justify-center items-center mb-10">
+                <div className="md:w-1/3">
+                  <button className="shadow bg-orange-400 hover:bg-orange-600 focus:shadow-outline focus:outline-none text-white font-bold py-2 px-20 rounded" type="button">
+                    Send
+                  </button>
+                </div>
+              </div>
+            </form>
           </div>
         </section>
+        
 
         <section>
           <div>
@@ -219,6 +253,17 @@ export default function Home() {
               <p className="text-gray-800 py-1">Illustrator</p>
               <p className="text-gray-800 py-1">Figma</p>
             </div>
+          </div>
+        </section>
+
+        <section>
+          <div className='relative bg-gradient-to-b from-orange-500 rounded-full w-80 h-80 mt-20 mx-auto overflow-hidden'>
+            <Image src={deved} layout='fill' objectFit='cover'/>
+          </div>
+          <div className='text-5xl flex justify-center gap-16 py-10 text-gray-600'>
+            <FaGoogle/>
+            <FaLinkedin/>
+            <FaGithub/>
           </div>
         </section>
       </main>

@@ -50,7 +50,7 @@ export default function Home() {
                   </a>
 
                   <a
-                    href="#"
+                    href="contact"
                     className="text-gray-400 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium"
                   >
                     Contact
@@ -58,7 +58,7 @@ export default function Home() {
 
                   <a
                     href="about"
-                    className="text-white hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium"
+                    className="bg-gray-700 text-white px-3 py-2 rounded-md text-sm font-medium cursor-default"
                   >
                     About
                   </a>
@@ -146,7 +146,7 @@ export default function Home() {
                 </a>
 
                 <a
-                  href="#"
+                  href="contact"
                   className="text-gray-400 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium"
                 >
                   Contact
@@ -154,7 +154,7 @@ export default function Home() {
 
                 <a
                   href="#"
-                  className="text-white hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium"
+                  className="bg-gray-700 text-white block px-3 py-2 rounded-md text-base font-medium cursor-default"
                 >
                   About
                 </a>
