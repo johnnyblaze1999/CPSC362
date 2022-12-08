@@ -173,7 +173,7 @@ export default function Home() {
         <section className='min-h-screen'>
           <div className=' text-left p-10'>
             <h2 className=' text-5xl py-2 text-orange-600 font-medium'>Contact Us</h2>
-            <h3 className=' text-2xl py-2'>Developer and designer</h3>
+            <h3 className=' text-2xl py-2'>Leave Your Feedback Below</h3>
             <p className=' text-sm py-5 leading-8'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
           </div>
           <div className="flex justify-center">
