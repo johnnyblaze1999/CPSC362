@@ -4,6 +4,9 @@ import Head from 'next/head'
 import {FaLinkedin, FaGoogle, FaGithub, FaBars} from 'react-icons/fa';
 import Image from 'next/image';
 import bookstore from '../public/bookstore.jpg'
+import design from '../public/design.png'
+import code from '../public/code.png'
+import consulting from '../public/consulting.png'
 import kevin from '../public/kevin.png'
 import brian from '../public/brian.png'
 import dharmesh from '../public/dharmesh.png'
@@ -190,46 +193,36 @@ export default function Home() {
 
         <section>
           <div>
-            <h3 className="text-center text-3xl py-1">Services We Offer</h3>
+            <h3 className="text-3xl pt-5">Services We Offer</h3>
             <p className="text-md py-2 leading-8 text-gray-800">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
           </div>
           <div className="md:flex gap-10">
             <div className="text-center shadow-lg p-10 rounded-xl my-10">
-              <Image src={kevin} alt="Services" width={100} height={100}/>
-              <h3 className="text-lg font-medium pt-8 pb-2">Kevin Nguyen</h3>
-              <p className="py-2">Front-end web developer and designer</p>
-              <h4 className="py-4 text-orange-600">My Duty</h4>
-              <p className="text-gray-800 py-1">I develop and design the look of the webpage. My goal is to make it reactive and clean looking with some of the modern feel. The most challenging part of my website is the navigation bar and its functionality. Because this is still my new language, parts of this website could be buggy or broken.</p>
-              <h4 className=" py-4 text-orange-600">Tools I used</h4>
-              <p className="text-gray-800 py-1">React</p>
+              <Image src={design} alt="Services" width={100} height={100}/>
+              <h3 className="text-lg font-medium pt-8 pb-2">Beautiful Design</h3>
+              <p className="py-2">Creating elegant designs suited for your needs following design theory</p>
+              <h4 className="py-4 text-teal-600">Design tools I use</h4>
               <p className="text-gray-800 py-1">Tailwind CSS</p>
+              <p className="text-gray-800 py-1">ReactJS</p>
+              <p className="text-gray-800 py-1">NextJS</p>
             </div>
             <div className="text-center shadow-lg p-10 rounded-xl my-10">
-              <Image src={brian} alt="Services" width={100} height={100}/>
-              <h3 className="text-lg font-medium pt-8 pb-2">Brian Nguyen</h3>
-              <p className="py-2">Front-end web developer and designer</p>
-              <h4 className="py-4 text-teal-600">My Work</h4>
-              <p className="text-gray-800 py-1">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-              <p className="text-gray-800 py-1">Illustrator</p>
-              <p className="text-gray-800 py-1">Figma</p>
+              <Image src={code} alt="Services" width={100} height={100}/>
+              <h3 className="text-lg font-medium pt-8 pb-2">Beautiful Design</h3>
+              <p className="py-2">Creating elegant designs suited for your needs following design theory</p>
+              <h4 className="py-4 text-teal-600">Design tools I use</h4>
+              <p className="text-gray-800 py-1">Tailwind CSS</p>
+              <p className="text-gray-800 py-1">ReactJS</p>
+              <p className="text-gray-800 py-1">NextJS</p>
             </div>
             <div className="text-center shadow-lg p-10 rounded-xl my-10">
-              <Image src={dharmesh} alt="Services" width={100} height={100}/>
-              <h3 className="text-lg font-medium pt-8 pb-2">Dharmesh Tewari</h3>
-              <p className="py-2">Back-end developer</p>
-              <h4 className="py-4 text-teal-600">My Work</h4>
-              <p className="text-gray-800 py-1">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-              <p className="text-gray-800 py-1">Illustrator</p>
-              <p className="text-gray-800 py-1">Figma</p>
-            </div>
-            <div className="text-center shadow-lg p-10 rounded-xl my-10">
-              <Image src={tuan} alt="Services" width={100} height={100}/>
-              <h3 className="text-lg font-medium pt-8 pb-2">Tuan Nguyen</h3>
-              <p className="py-2">Scrum master</p>
-              <h4 className="py-4 text-teal-600">My Work</h4>
-              <p className="text-gray-800 py-1">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-              <p className="text-gray-800 py-1">Illustrator</p>
-              <p className="text-gray-800 py-1">Figma</p>
+              <Image src={consulting} alt="Services" width={100} height={100}/>
+              <h3 className="text-lg font-medium pt-8 pb-2">Beautiful Design</h3>
+              <p className="py-2">Creating elegant designs suited for your needs following design theory</p>
+              <h4 className="py-4 text-teal-600">Design tools I use</h4>
+              <p className="text-gray-800 py-1">Tailwind CSS</p>
+              <p className="text-gray-800 py-1">ReactJS</p>
+              <p className="text-gray-800 py-1">NextJS</p>
             </div>
           </div>
         </section>

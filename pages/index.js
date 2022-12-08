@@ -3,7 +3,9 @@ import { Transition } from "@headlessui/react";
 import Head from 'next/head'
 import {FaLinkedin, FaGoogle, FaGithub, FaBars} from 'react-icons/fa';
 import Image from 'next/image';
-import deved from '../public/shopping-bag0.png'
+import creditCards from '../public/credit-cards.svg'
+import offline from '../public/offline.png'
+import openBook from '../public/open_book.png'
 import design from '../public/design.png'
 import code from '../public/code.png'
 import consulting from '../public/consulting.png'
@@ -171,24 +173,95 @@ export default function Home() {
 
       <main className='bg-white px-10'>
         <section className='min-h-screen'>
-          <div className=' text-center p-10'>
-            <h2 className='text-5xl py-2 text-teal-600 font-medium'>Kevin Nguyen</h2>
-            <h3 className=' text-2xl py-2'>Developer and designer</h3>
-            <p className=' text-sm py-5 leading-8'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+          <div className=" rounded-lg py-20 bg-gradient-to-br from-orange-400 to-red-500">
+            <div className="container mx-auto px-6">
+              <h2 className="text-4xl font-bold mb-2 text-white drop-shadow-lg">
+                Online Bookstore will never be this easy!
+              </h2>
+              <h3 className="text-2xl mb-8 text-gray-200 drop-shadow-lg">
+                Get your favorite book on the go anywhere you want. Rent or Purchase available.
+              </h3>
+
+              <button className="bg-white font-bold rounded-full py-4 px-8 shadow-lg uppercase tracking-wider hover:bg-black hover:text-white">
+                Our Products
+              </button>
+            </div>
           </div>
-          <div className='text-5xl flex justify-center gap-16 py-3 text-gray-600'>
-            <FaGoogle/>
-            <FaLinkedin/>
-            <FaGithub/>
+
+
+
+          <div className="container mx-auto px-6 p-10">
+            <h2 className="text-4xl font-bold text-center text-gray-800 mb-8">
+            Features
+            </h2>
+            <div className="flex items-center flex-wrap mb-20">
+              <div className="w-full md:w-1/2">
+                <h4 className="text-3xl text-gray-800 font-bold mb-3">Preview and Subscription</h4>
+                <p className="text-gray-600 mb-8 mr-20">We are allow to read up to 50 pages before buying. You also can read online with monthly subscription rather than buying every single book.</p>
+              </div>
+              <div className="w-full max-w-md md:w-1/2">
+                <Image src={openBook} alt="1st feature" />
+              </div>
+            </div>
+
+            <div className="flex items-center flex-wrap mb-20">
+              <div className=" w-full max-w-md md:w-1/2 mr-20">
+                <Image src={creditCards} alt="2nd feature" />
+              </div>
+              <div className="w-full md:w-1/2 pl-10">
+                <h4 className="text-3xl text-gray-800 font-bold mb-3">Convenient Payment System</h4>
+                <p className="text-gray-600 mb-8">We accept credit/debit card payment, e-cash, mobile wallet, Paypal, Venmo, Zelle, and QR payment</p>
+              </div>
+            </div>
+
+            <div className="flex items-center flex-wrap mb-20">
+              <div className="w-full md:w-1/2">
+                <h4 className="text-3xl text-gray-800 font-bold mb-3">Offline Reading</h4>
+                <p className="text-gray-600 mb-8 mr-20">Our BookDeal website allows you to download purchased book for later read. It is available for all of your registered devices.</p>
+              </div>
+              <div className=" w-full max-w-md md:w-1/2">
+                <Image src={offline} alt="Offline Reading" />
+              </div>
+            </div>
           </div>
-          <div className='relative bg-gradient-to-b from-teal-500 rounded-full w-80 h-80 mt-20 mx-auto overflow-hidden'>
-            <Image src={deved} layout='fill' objectFit='cover'/>
+
+
+
+          <div className=" bg-gradient-to-r from-orange-200 to-white rounded-lg">
+            <div className="container mx-auto px-6 py-20">
+              <h2 className="text-4xl font-bold text-center text-black mb-8">
+                Testimonials
+              </h2>
+              <div className="flex flex-wrap">
+                <div className="w-full md:w-1/3 px-2 mb-4">
+                  <div className="bg-white rounded shadow-lg py-2">
+                    <p className="text-orange-600 text-base px-6 mb-5">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                    <p className="text-gray-500 text-xs md:text-sm px-6">John Doe</p>
+                  </div>
+                </div>
+                <div className="w-full md:w-1/3 px-2 mb-4">
+                  <div className="bg-white rounded shadow-lg py-2">
+                    <p className="text-orange-600 text-base px-6 mb-5">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                    <p className="text-gray-500 text-xs md:text-sm px-6">Jane Doe</p>
+                  </div>
+                </div>
+                <div className="w-full md:w-1/3 px-2 mb-4">
+                  <div className="bg-white rounded shadow-lg py-2">
+                    <p className="text-orange-600 text-base px-6 mb-5">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                    <p className="text-gray-500 text-xs md:text-sm px-6">James Doe</p>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
+
         </section>
+
+        
 
         <section>
           <div>
-            <h3 className="text-3xl py-1">Services We Offer</h3>
+            <h3 className="text-3xl pt-5">Services We Offer</h3>
             <p className="text-md py-2 leading-8 text-gray-800">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
           </div>
           <div className="md:flex gap-10">
@@ -197,27 +270,27 @@ export default function Home() {
               <h3 className="text-lg font-medium pt-8 pb-2">Beautiful Design</h3>
               <p className="py-2">Creating elegant designs suited for your needs following design theory</p>
               <h4 className="py-4 text-teal-600">Design tools I use</h4>
-              <p className="text-gray-800 py-1">Photoshop</p>
-              <p className="text-gray-800 py-1">Illustrator</p>
-              <p className="text-gray-800 py-1">Figma</p>
+              <p className="text-gray-800 py-1">Tailwind CSS</p>
+              <p className="text-gray-800 py-1">ReactJS</p>
+              <p className="text-gray-800 py-1">NextJS</p>
             </div>
             <div className="text-center shadow-lg p-10 rounded-xl my-10">
               <Image src={code} alt="Services" width={100} height={100}/>
               <h3 className="text-lg font-medium pt-8 pb-2">Beautiful Design</h3>
               <p className="py-2">Creating elegant designs suited for your needs following design theory</p>
               <h4 className="py-4 text-teal-600">Design tools I use</h4>
-              <p className="text-gray-800 py-1">Photoshop</p>
-              <p className="text-gray-800 py-1">Illustrator</p>
-              <p className="text-gray-800 py-1">Figma</p>
+              <p className="text-gray-800 py-1">Tailwind CSS</p>
+              <p className="text-gray-800 py-1">ReactJS</p>
+              <p className="text-gray-800 py-1">NextJS</p>
             </div>
             <div className="text-center shadow-lg p-10 rounded-xl my-10">
               <Image src={consulting} alt="Services" width={100} height={100}/>
               <h3 className="text-lg font-medium pt-8 pb-2">Beautiful Design</h3>
               <p className="py-2">Creating elegant designs suited for your needs following design theory</p>
               <h4 className="py-4 text-teal-600">Design tools I use</h4>
-              <p className="text-gray-800 py-1">Photoshop</p>
-              <p className="text-gray-800 py-1">Illustrator</p>
-              <p className="text-gray-800 py-1">Figma</p>
+              <p className="text-gray-800 py-1">Tailwind CSS</p>
+              <p className="text-gray-800 py-1">ReactJS</p>
+              <p className="text-gray-800 py-1">NextJS</p>
             </div>
           </div>
         </section>

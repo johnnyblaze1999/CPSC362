@@ -222,7 +222,7 @@ export default function Home() {
 
         <section>
           <div>
-            <h3 className="text-3xl py-1">Services We Offer</h3>
+            <h3 className="text-3xl pt-5">Services We Offer</h3>
             <p className="text-md py-2 leading-8 text-gray-800">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
           </div>
           <div className="md:flex gap-10">
@@ -231,27 +231,27 @@ export default function Home() {
               <h3 className="text-lg font-medium pt-8 pb-2">Beautiful Design</h3>
               <p className="py-2">Creating elegant designs suited for your needs following design theory</p>
               <h4 className="py-4 text-teal-600">Design tools I use</h4>
-              <p className="text-gray-800 py-1">Photoshop</p>
-              <p className="text-gray-800 py-1">Illustrator</p>
-              <p className="text-gray-800 py-1">Figma</p>
+              <p className="text-gray-800 py-1">Tailwind CSS</p>
+              <p className="text-gray-800 py-1">ReactJS</p>
+              <p className="text-gray-800 py-1">NextJS</p>
             </div>
             <div className="text-center shadow-lg p-10 rounded-xl my-10">
               <Image src={code} alt="Services" width={100} height={100}/>
               <h3 className="text-lg font-medium pt-8 pb-2">Beautiful Design</h3>
               <p className="py-2">Creating elegant designs suited for your needs following design theory</p>
               <h4 className="py-4 text-teal-600">Design tools I use</h4>
-              <p className="text-gray-800 py-1">Photoshop</p>
-              <p className="text-gray-800 py-1">Illustrator</p>
-              <p className="text-gray-800 py-1">Figma</p>
+              <p className="text-gray-800 py-1">Tailwind CSS</p>
+              <p className="text-gray-800 py-1">ReactJS</p>
+              <p className="text-gray-800 py-1">NextJS</p>
             </div>
             <div className="text-center shadow-lg p-10 rounded-xl my-10">
               <Image src={consulting} alt="Services" width={100} height={100}/>
               <h3 className="text-lg font-medium pt-8 pb-2">Beautiful Design</h3>
               <p className="py-2">Creating elegant designs suited for your needs following design theory</p>
               <h4 className="py-4 text-teal-600">Design tools I use</h4>
-              <p className="text-gray-800 py-1">Photoshop</p>
-              <p className="text-gray-800 py-1">Illustrator</p>
-              <p className="text-gray-800 py-1">Figma</p>
+              <p className="text-gray-800 py-1">Tailwind CSS</p>
+              <p className="text-gray-800 py-1">ReactJS</p>
+              <p className="text-gray-800 py-1">NextJS</p>
             </div>
           </div>
         </section>
